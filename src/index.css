@@ -1,0 +1,151 @@
+:root{
+    --dark:#374151;
+    --darker:#1F2937;
+    --darkest:#111827;
+    --gray:#6B7280;
+    --light:#EEE;
+    --pink:#EC4899;
+    --purpule:#8B5CF6
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* min-height: ; */
+    background: var(--dark);
+    color: #fff;
+}
+
+header{
+    padding: 2px 1px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+
+#frm{
+    display: flex;
+}
+
+input , button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#input{
+    flex : 1 1 0%;
+    background-color: var(--darker);
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: var(--light);
+    font-size: 15px;
+}
+#input::placeholder{
+    color: var(--gray);
+}
+
+#submit{
+    color: var(--pink);
+    font-size: 20px;
+    font-weight: 700;
+}
+#submit:hover{
+    opacity: 0.8;
+}
+
+#submit:active{
+    opacity:0.6
+}
+
+main {
+    flex: 1 1 0%;
+    padding: 20px 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list{
+    padding: 10px;
+}
+
+.list h2{
+    font-size: 29px;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 15px;
+}
+
+#tasks .task{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.task .content .text{
+    color: var(--light);
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.task .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .delete {
+	color: crimson;
+}
+
+#root{
+    margin: auto;
+    margin-top: 30px;
+}
+.image{
+    height: 70px;
+    width: 250px;
+}
+
+
